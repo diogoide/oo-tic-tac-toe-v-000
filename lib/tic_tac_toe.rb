@@ -69,8 +69,7 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.detect do |win_combination|
-
+    WIN_COMBINATIONS.find do |win_combination|
 
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -80,8 +79,8 @@ class TicTacToe
     position_2 = @board[win_index_2]
     position_3 = @board[win_index_3]
 
-    if position_1 == "X" || position_1 == "O"
-    win_combination
+    if @board[win_index_1] == "X" || @board[win_index_1] == "O"
+      win_combination
     else
       false
     end
