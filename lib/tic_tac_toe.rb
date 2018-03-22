@@ -98,7 +98,9 @@ class TicTacToe
   end
 
   def over?
-    won? || draw?
+    if won? || draw?
+    elsif !full?
+      false 
   end
 
 
@@ -124,7 +126,7 @@ class TicTacToe
 
    def winner
      if the_winner = won? #[0,1,2]
-       @board[the_winner[0]] 
+       @board[the_winner[0]]
      end
    end
 end
