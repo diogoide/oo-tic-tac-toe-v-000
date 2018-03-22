@@ -113,10 +113,10 @@ class TicTacToe
     position_2 = @board[win_index_2]
     position_3 = @board[win_index_3]
 
-    if won?(board) && position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return "X"
-    elsif won?(board) && position_1 == "O" && position_2 == "O" && position_3 == "O"
-      return "O"
+    if won? && position_1 == "X" && position_2 == "X" && position_3 == "X"
+    return "X"
+    elsif won? && position_1 == "O" && position_2 == "O" && position_3 == "O"
+    return "O"
     end
   end
   nil
