@@ -117,8 +117,8 @@ class TicTacToe
       return "X"
     elsif won? && (position_1 == "O" && position_2 == "O" && position_3 == "O")
       return "O"
-    else
-      nil  
+    elsif !won?
+      nil
     end
   end
     end
