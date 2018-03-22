@@ -82,6 +82,7 @@ class TicTacToe
       #binding.pry
       return win_combination
     end
+    false 
   end
 
   def full?
