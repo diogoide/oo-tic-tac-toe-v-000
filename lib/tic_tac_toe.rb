@@ -119,6 +119,8 @@ class TicTacToe
       return "O"
   end
 end
+end
+end
 #   end
 # end
 
@@ -127,5 +129,3 @@ end
   #      @board[the_winner[0]]
   #    end
   #  end
-end
-end
