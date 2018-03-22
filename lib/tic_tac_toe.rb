@@ -119,7 +119,7 @@ class TicTacToe
       return "O"
     end
   end
-  
+end   
 
 
 
