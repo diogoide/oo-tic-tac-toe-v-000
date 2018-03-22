@@ -81,9 +81,7 @@ class TicTacToe
 
     if @board[win_combination[0]] == @board[win_combination[1]] && @board[win_combination[0]] == @board[win_combination[2]]
       #binding.pry
-      win_combination
-    else
-      false
+      return win_combination
     end
   end
 
