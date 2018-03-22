@@ -99,7 +99,7 @@ class TicTacToe
 
   def over?
     if won? || draw? || full?
-    end   
+    end
   end
 
 
