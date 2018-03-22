@@ -103,7 +103,7 @@ end
   end
 
 
-  def winner?
+  def winner
     WIN_COMBINATIONS.each do |win_combination|
 
     win_index_1 = win_combination[0]
