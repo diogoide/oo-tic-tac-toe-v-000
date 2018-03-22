@@ -102,30 +102,30 @@ class TicTacToe
   end
 
 
-#   def winner?
-#     WIN_COMBINATIONS.each do |win_combination|
-#
-#     win_index_1 = win_combination[0]
-#     win_index_2 = win_combination[1]
-#     win_index_3 = win_combination[2]
-#
-#     position_1 = @board[win_index_1]
-#     position_2 = @board[win_index_2]
-#     position_3 = @board[win_index_3]
-#
-#     if won? && @board[win_combination[0]]
-#       return "X"
-#     else won? && position_1 == "O" && position_2 == "O" && position_3 == "O"
-#       return "O"
-#   end
-#   nil
+  def winner?
+    WIN_COMBINATIONS.each do |win_combination|
+
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
+
+    position_1 = @board[win_index_1]
+    position_2 = @board[win_index_2]
+    position_3 = @board[win_index_3]
+
+    if won? && position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return "X"
+    else won? && position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return "O"
+  end
+  nil
 #   end
 # end
 
-   def winner
-     if the_winner = won? #[0,1,2]
-       @board[the_winner[0]]
-     end
-   end
+  #  def winner
+  #    if the_winner = won? #[0,1,2]
+  #      @board[the_winner[0]]
+  #    end
+  #  end
 end
 end
