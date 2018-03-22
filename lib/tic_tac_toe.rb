@@ -26,7 +26,6 @@ class TicTacToe
 
   def input_to_index(input)
   index = input.to_i - 1
-
   end
 
   def move(index,token)
@@ -84,6 +83,7 @@ class TicTacToe
       return win_combination
     end
   end
+end
 
   def full?
       @board.all? do |letter|
