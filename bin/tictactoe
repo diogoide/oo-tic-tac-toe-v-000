@@ -1,3 +1,14 @@
 #!/usr/bin/env ruby
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
+
+def play(board)
+  until over?
+    turn
+  end
+   if won?
+      puts "Congratulations #{winner(board)}!"
+   else draw?
+      puts "Cat's Game!"
+    end
+  end
