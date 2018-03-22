@@ -83,7 +83,6 @@ class TicTacToe
       return win_combination
     end
   end
-end
 
   def full?
       @board.all? do |letter|
@@ -103,7 +102,7 @@ end
   end
 
 
-  def winner
+  def winner?
     WIN_COMBINATIONS.each do |win_combination|
 
     win_index_1 = win_combination[0]
@@ -114,7 +113,7 @@ end
     position_2 = @board[win_index_2]
     position_3 = @board[win_index_3]
 
-    if won? && position_1 == "X" && position_2 == "X" && position_3 == "X"
+    if won? && @board[win_combination[0]]
       return "X"
     else won? && position_1 == "O" && position_2 == "O" && position_3 == "O"
       return "O"
@@ -122,4 +121,10 @@ end
   nil
   end
 end
+
+   def winner
+     if the_winner = won? #[0,1,2]
+       @board[the_winner[0]]
+     end
+   end
 end
