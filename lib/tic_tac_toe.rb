@@ -80,7 +80,7 @@ class TicTacToe
     position_3 = @board[win_index_3]
 
     if @board[win_combination[0]] == @board[win_combination[1]] && @board[win_combination[0]] == @board[win_combination[2]]
-      binding.pry
+      #binding.pry
       win_combination
     else
       false
