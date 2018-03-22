@@ -103,7 +103,7 @@ class TicTacToe
 
 
   def winner
-    WIN_COMBINATIONS.each do |win_combination|
+    WIN_COMBINATIONS.find do |win_combination|
 
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -118,7 +118,7 @@ class TicTacToe
     elsif won? && (position_1 == "O" && position_2 == "O" && position_3 == "O")
       "O"
     else
-      nil  
+      nil
     end
   end
     end
