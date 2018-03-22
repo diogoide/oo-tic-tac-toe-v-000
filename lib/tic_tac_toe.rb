@@ -98,7 +98,7 @@ class TicTacToe
   end
 
   def over?
-    if won? || draw? || full?
+    if won? || draw? 
     end
   end
 
