@@ -82,7 +82,6 @@ class TicTacToe
       #binding.pry
       return win_combination
     end
-    false 
   end
 
   def full?
@@ -95,7 +94,7 @@ class TicTacToe
 
 
   def draw?
-      !won? && full?
+    full? && !won?
   end
 
   def over?
